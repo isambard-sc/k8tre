@@ -17,11 +17,11 @@ spec:
   # Source configuration defines where to find the application manifests
   source:
     # The Git repository containing all application definitions
-    repoURL: https://github.com/.git
+    repoURL: https://github.com/isambard-sc/k8tre.git
     # The branch or tag to use - typically the  branch
     # Create a copy of this tile and change this to a feature branch for development
     # Use kubectl apply -k root-app-of-apps.yaml to deploy the application in your development environment
-    targetRevision: 
+    targetRevision: 6b5106d0944cd14369692ba4312cb90324a97013
     # The directory within the repository containing ApplicationSet definitions
     path: appsets
     kustomize:
