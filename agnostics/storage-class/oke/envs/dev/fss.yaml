@@ -1,0 +1,9 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: fss-storage-class
+provisioner: fss.csi.oraclecloud.com
+parameters:
+  availabilityDomain: UK-LONDON-1-AD-3
+  mountTargetOcid: ocid1.mounttarget.oc1.uk_london_1.aaaaacvipp3b2jrwnruhellqojxwiotvnmwwy33omrxw4ljrfvqwiljs
+  encryptInTransit: "true"

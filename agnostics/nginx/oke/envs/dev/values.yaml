@@ -1,0 +1,10 @@
+controller:
+  publishService:
+    enabled: "true" # This is required for external-dns to work
+    
+  admissionWebhooks:
+    enabled: false
+
+  service:
+    annotations:
+        oci.oraclecloud.com/load-balancer-type: "lb"
