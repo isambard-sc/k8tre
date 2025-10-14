@@ -9,3 +9,10 @@ __pycache__/
 .venv/
 
 screenshots/
+
+# devbox
+.devbox/
+devbox.lock
+
+# Kubernetes
+kubeconfig
