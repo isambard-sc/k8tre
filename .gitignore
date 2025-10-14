@@ -16,3 +16,7 @@ devbox.lock
 
 # Kubernetes
 kubeconfig
+
+# python uv
+pyproject.toml
+.python-version
