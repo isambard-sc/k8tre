@@ -6,6 +6,7 @@ resources:
   - postgres.yaml
   - Ingress.yaml
   - keycloak.yaml
+  - Services.yaml
 
 patches:
   - path: certificate-patch.yaml
