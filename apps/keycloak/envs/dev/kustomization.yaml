@@ -9,7 +9,7 @@ resources:
   - Services.yaml
 
 helmCharts:
-  - name: jaegertracing
+  - name: jaeger
     version: 4.0.0
     repo: https://jaegertracing.github.io/helm-charts
     releaseName: jaegertracing/jaeger
