@@ -37,6 +37,7 @@ global:
 enableDefaultInitContainers: false
 args:
   - start
+  - --verbose
 extraEnvVars:
   - name: KC_PROXY_HEADERS
     value: "xforwarded"
