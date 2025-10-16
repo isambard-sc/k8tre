@@ -28,7 +28,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/k8tre/k8tre.git
-        targetRevision: main
+        targetRevision: 9c07f2f2d2d890820aaf453f414f8a5022393bda
         path: "{{.path.path}}"
       destination:
         server: "{{.server}}"
