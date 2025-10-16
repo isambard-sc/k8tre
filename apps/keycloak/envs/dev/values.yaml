@@ -36,8 +36,12 @@ global:
     allowInsecureImages: true
 enableDefaultInitContainers: false
 args:
-  - start-dev
+  - start
 extraEnvVars:
+  - name: KC_PROXY_HEADERS
+    value: "xforwarded"
+  - name: KC_HTTP_ENABLED
+    value: "true"
   - name: KC_DB
     value: postgres
   - name: KC_DB_URL
