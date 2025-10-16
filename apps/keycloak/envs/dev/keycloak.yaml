@@ -23,6 +23,11 @@ spec:
           image: quay.io/keycloak/keycloak:26.4.1
           args: ["start"]
           env:
+            # enable tracing for better observability
+            - name: KC_TRACING_ENABLED
+              value: "true"
+            - name: KC_TRACING_ENDPOINT
+              value: "http://jaeger-collector.Keycloak.svc.cluster.local:14268/api/traces"
             - name: KC_BOOTSTRAP_ADMIN_USERNAME
               value: "admin"
             - name: KC_BOOTSTRAP_ADMIN_PASSWORD

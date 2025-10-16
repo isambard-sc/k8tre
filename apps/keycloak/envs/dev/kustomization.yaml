@@ -8,6 +8,13 @@ resources:
   - keycloak.yaml
   - Services.yaml
 
+helmCharts:
+  - name: jaeger
+    version: 4.36.0
+    repo: https://jaegertracing.github.io/helm-charts
+    releaseName: jaeger
+    namespace: keycloak
+
 patches:
   - path: certificate-patch.yaml
     target:
