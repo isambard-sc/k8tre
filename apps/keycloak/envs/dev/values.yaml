@@ -34,3 +34,4 @@ image:
 global: 
   security: 
     allowInsecureImages: true
+enableDefaultInitContainers: false
