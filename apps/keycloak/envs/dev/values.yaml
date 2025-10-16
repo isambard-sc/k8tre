@@ -36,7 +36,7 @@ global:
     allowInsecureImages: true
 enableDefaultInitContainers: false
 args:
-  - start
+  - start-dev
 extraEnvVars:
   - name: KC_DB
     value: postgres
