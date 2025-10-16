@@ -31,3 +31,6 @@ image:
   registry: quay.io
   repository: keycloak/keycloak
   tag: 26.4.1
+global: 
+  security: 
+    allowInsecureImages: true
