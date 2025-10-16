@@ -42,3 +42,8 @@ extraEnvVars:
     value: postgres
   - name: KC_DB_URL
     value: jdbc:postgresql://keycloak-postgres-cluster-rw.keycloak.svc.cluster.local/keycloak
+  - name: KC_BOOTSTRAP_ADMIN_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: keycloak-admin-secret
+        key: admin-password
