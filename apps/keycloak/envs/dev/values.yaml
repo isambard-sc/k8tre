@@ -26,3 +26,8 @@ auth:
 
 logging:
   level: DEBUG
+
+image:
+  registry: quay.io
+  repository: keycloak
+  tag: 26.4.1
