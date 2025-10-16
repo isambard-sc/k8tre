@@ -35,3 +35,5 @@ global:
   security: 
     allowInsecureImages: true
 enableDefaultInitContainers: false
+args:
+  - start
