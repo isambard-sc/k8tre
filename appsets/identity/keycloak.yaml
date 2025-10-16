@@ -28,7 +28,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/k8tre/k8tre.git
-        targetRevision: 2f08df33ecda1cb9bbf0e466940f533677ac861c
+        targetRevision: jwatson/OKE
         path: "{{.path.path}}"
       destination:
         server: "{{.server}}"
