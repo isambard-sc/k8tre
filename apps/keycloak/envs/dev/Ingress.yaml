@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: guacamole.dev.193-123-191-48.sslip.io
+  - host: keycloak.dev.193-123-191-48.sslip.io
     http:
       paths:
       - backend:
