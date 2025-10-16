@@ -37,3 +37,8 @@ global:
 enableDefaultInitContainers: false
 args:
   - start
+extraEnvVars:
+  - name: KC_DB
+    value: postgres
+  - name: KC_DB_URL
+    value: jdbc:postgresql://keycloak-postgres-cluster-rw.keycloak.svc.cluster.local/keycloak
