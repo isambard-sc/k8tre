@@ -9,10 +9,10 @@ resources:
   - Services.yaml
 
 helmCharts:
-  - name: jaeger
+  - name: jaegertracing
     version: 4.0.0
     repo: https://jaegertracing.github.io/helm-charts
-    releaseName: jaeger
+    releaseName: jaegertracing/jaeger
     namespace: keycloak
 
 patches:
