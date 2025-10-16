@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: keycloak.dev.k8tre.internal
+       service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+  labels:
+  name: keycloak
+  namespace: keycloak
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: keycloak.dev.k8tre.internal
+    http:
+      paths:
+      - backend:
+          service:
+            name: keycloak
+            port:
+              name: http
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - keycloak.dev.k8tre.internal
+    secretName: keycloak-k8tre-tls
