@@ -177,7 +177,7 @@ singleuser:
 ingress:
   enabled: true
   hosts:
-    - jupyter.dev.k8tre.internal
+    - jupyter.dev.193-123-191-48.sslip.io
   ingressClassName: nginx
   annotations:
     external-dns.alpha.kubernetes.io/hostname: jupyter.dev.k8tre.internal

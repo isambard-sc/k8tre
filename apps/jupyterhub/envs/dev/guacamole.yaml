@@ -22,7 +22,7 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
   hosts:
-    - host: guacamole.dev.k8tre.internal
+    - host: guacamole.dev.193-123-191-48.sslip.io
       pathType: ImplementationSpecific
   tls:
     - hosts:
