@@ -22,5 +22,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - keycloak.dev.k8tre.internal
+    - keycloak.dev.193-123-191-48.sslip.io
     secretName: keycloak-k8tre-tls
