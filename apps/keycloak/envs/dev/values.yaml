@@ -29,5 +29,5 @@ logging:
 
 image:
   registry: quay.io
-  repository: keycloak
+  repository: keycloak/keycloak
   tag: 26.4.1
