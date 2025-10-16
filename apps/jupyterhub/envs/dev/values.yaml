@@ -184,7 +184,7 @@ ingress:
     service.beta.kubernetes.io/azure-load-balancer-internal: "true"
   tls:
     - hosts:
-        - jupyter.dev.k8tre.internal
+        - jupyter.dev.193-123-191-48.sslip.io
       secretName: jupyter-k8tre-tls
 
 debug:

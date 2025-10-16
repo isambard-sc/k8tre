@@ -1,6 +1,6 @@
 - op: replace
   path: /spec/commonName
-  value: dev.k8tre.internal
+  value: dev.193-123-191-48.sslip.io
 - op: replace
   path: /spec/dnsNames/0
-  value: dev.k8tre.internal
+  value: dev.193-123-191-48.sslip.io
