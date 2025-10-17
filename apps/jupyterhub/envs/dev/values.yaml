@@ -93,14 +93,19 @@ hub:
       services:
         - guacamole
 
-
+  annotations:
+    instrumentation.opentelemetry.io/inject-python: "true"
 
 
 proxy:
   service:
     type: ClusterIP
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 
 singleuser:
+  extraAnnotations:
+    instrumentation.opentelemetry.io/inject-python: "true"
   cloudMetadata:
     # This requires elevated permissions which should be avoided. Use network policies instead.
     # See https://z2jh.jupyter.org/en/latest/administrator/security.html#audit-cloud-metadata-server-access
@@ -189,3 +194,8 @@ ingress:
 
 debug:
   enabled: true
+
+scheduling:
+  userScheduler:
+    annotations:
+      instrumentation.opentelemetry.io/inject-python: "true"
