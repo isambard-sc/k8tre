@@ -27,9 +27,9 @@ spec:
             - name: KC_TRACING_ENABLED
               value: "true"
             - name: KC_TRACING_PROTOCOL
-              value: "http/protobuf"
+              value: "grpc"
             - name: KC_TRACING_ENDPOINT
-              value: "http://jaeger-inmemory-instance-collector.keycloak.svc.cluster.local:4318/api/traces"
+              value: "http://jaeger-inmemory-instance-collector.keycloak.svc.cluster.local:4317/api/traces"
             - name: KC_BOOTSTRAP_ADMIN_USERNAME
               value: "admin"
             - name: KC_BOOTSTRAP_ADMIN_PASSWORD
