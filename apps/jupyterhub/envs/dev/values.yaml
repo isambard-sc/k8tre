@@ -94,7 +94,7 @@ hub:
         - guacamole
 
   annotations:
-    - instrumentation.opentelemetry.io/inject-python: "true"
+    instrumentation.opentelemetry.io/inject-python: "true"
 
 
 proxy:
