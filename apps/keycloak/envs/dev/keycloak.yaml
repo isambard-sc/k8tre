@@ -26,6 +26,8 @@ spec:
             # enable tracing for better observability
             - name: KC_TRACING_ENABLED
               value: "true"
+            - name: KC_TRACING_PROTOCOL
+              value: "http/protobuf"
             - name: KC_TRACING_ENDPOINT
               value: "http://jaeger-inmemory-instance-collector.keycloak.svc.cluster.local:4318/api/traces"
             - name: KC_BOOTSTRAP_ADMIN_USERNAME
