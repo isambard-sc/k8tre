@@ -26,6 +26,8 @@ spec:
             # enable tracing for better observability
             - name: KC_TRACING_ENABLED
               value: "true"
+            - name: KC_TRACING_JDBC_ENABLED
+              value: "false"
             - name: KC_TRACING_PROTOCOL
               value: "grpc"
             - name: KC_TRACING_ENDPOINT
