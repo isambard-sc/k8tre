@@ -9,6 +9,7 @@ spec:
   commonName: base.k8tre.internal
   dnsNames:
     - base.k8tre.internal
+    - dev.193-123-191-48.sslip.io
   usages:
     - digital signature
     - key encipherment
