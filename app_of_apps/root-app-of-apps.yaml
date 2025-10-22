@@ -21,7 +21,7 @@ spec:
     # The branch or tag to use - typically the  branch
     # Create a copy of this tile and change this to a feature branch for development
     # Use kubectl apply -k root-app-of-apps.yaml to deploy the application in your development environment
-    targetRevision: 6b5106d0944cd14369692ba4312cb90324a97013
+    targetRevision: jwatson/OKE
     # The directory within the repository containing ApplicationSet definitions
     path: appsets
     kustomize:
@@ -41,10 +41,10 @@ spec:
               value: https://github.com/isambard-sc/k8tre.git
             - op: replace
               path: /spec/generators/0/matrix/generators/0/git/revision
-              value: 6b5106d0944cd14369692ba4312cb90324a97013
+              value: jwatson/OKE
             - op: replace
               path: /spec/template/spec/source/targetRevision
-              value: 6b5106d0944cd14369692ba4312cb90324a97013
+              value: jwatson/OKE
 
   # Destination defines where to deploy the manifests
   destination:
