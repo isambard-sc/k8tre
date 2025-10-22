@@ -4,7 +4,9 @@
     "argocd@latest",
     "git@latest",
     "yq-go@latest",
-    "cilium-cli@latest"
+    "cilium-cli@latest",
+    "kubernetes-helm@latest",
+    "lazygit@latest"
   ],
   "shell": {
     "init_hook": [
