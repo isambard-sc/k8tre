@@ -2,6 +2,10 @@ prePuller:
   hook:
     enabled: false # Disable prePuller hook - see https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/1621
 hub:
+  readinessProbe:
+    enable: false
+  livenessProbe:
+    enable: false
   networkPolicy:
     egress:
       - ports:
